@@ -1,27 +1,27 @@
-baseURL = "https://myweb-hazel.vercel.app/"
+baseURL = "https://martinc.me/"
 languageCode = "en-us"
 paginate = 6
 theme = "portio"
-title = "Martin"
+title = "Martin Marquez Cervantes"
 # Main Menu
 [[menu.main]]
 name = "Hola"
 url = "#home"
 weight = 1
 [[menu.main]]
-name = "About"
+name = "Acerca"
 url = "#about"
 weight = 2
 [[menu.main]]
-name = "Service"
+name = "Skills"
 url = "#service"
 weight = 3
 [[menu.main]]
-name = "Work"
+name = "Proyectos"
 url = "#portfolio"
 weight = 4
 [[menu.main]]
-name = "Resume"
+name = "CV"
 url = "#resume"
 weight = 5
 [[menu.main]]
@@ -29,13 +29,13 @@ name = "Blog"
 url = "#blog"
 weight = 6
 [[menu.main]]
-name = "Contact"
+name = "Contacto"
 url = "#contact"
 weight = 7
 
 # Sitemap Menu
 [[menu.sitemap]]
-name = "About me"
+name = "Acerca de mí"
 url = "about"
 weight = 1
 [[menu.sitemap]]
@@ -47,45 +47,57 @@ name = "Privacy & Policy"
 url = "#"
 weight = 3
 [[menu.sitemap]]
-name = "Latest Article"
-url = "#"
+name = "CodeMX"
+url = "https://codemx.org"
 weight = 4
+[[menu.sitemap]]
+name = "TecTec"
+url = "https://tectecshop.com"
+weight = 5
 
 [params]
 blogPageURL = "blog"
 contactLink = "contact"
 copyright = "All right reserved copyright © Portio 2020"
 footerLogo = "images/contact/widget-logo.png"
-formspreeURL = "YOUR FORMSPREE URL"
+formspreeURL = "https://formspree.io/f/xaylgyeo"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
 [params.address]
-address = "23 Khan Niketon, Grand Street, NYK."
-email = "hello@example.com"
-openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-phone = "+(448) 833 5272 332"
+address = "70 San Pedro de la Laguna, Zumpango de Ocampo, Edomex."
+email = "m@martinmc.me"
+openingHours = "Disponible 10am a 6pm (Domingos Offline)"
+phone = "+(52) 55 7174 8569"
 
 [params.map]
-APIkey = "YOUR GOOGLE MAP API"
-latitude = "23.7783741"
-longitude = "90.3746808"
+APIkey = "AIzaSyB6FFTBF4paFNRCmr_eOMhzRXAou9MDuM8"
+latitude = "19.776958"
+longitude = "-99.116624"
 pinImage = "images/pin.png"
 
 # Social icons
 [[params.social]]
 icon = "fa-facebook-official"
-url = "https://www.facebook.com/"
+url = "https://www.facebook.com/martin.marquezcervantes.5"
 weight = 1
 [[params.social]]
 icon = "fa-linkedin-square"
-url = "https://www.linkedin.com/"
+url = "https://www.linkedin.com/in/martin-marquez-cervantes/"
 weight = 2
 [[params.social]]
 icon = "fa-pinterest-square"
-url = "https://www.pinterest.com/"
+url = "https://www.instagram.com/martyeei/"
 weight = 3
 [[params.social]]
 icon = "fa-twitter-square"
-url = "https://twitter.com/"
+url = "https://twitter.com/MarParkLP"
 weight = 4
+[[params.social]]
+icon = "fa-github-square"
+url = "https://github.com/MarqCervMartin"
+weight = 5
+[[params.social]]
+icon = "fa-youtube-square"
+url = "https://www.youtube.com/channel/UCve0-mOyNxzTnr5HvHF0RSw/featured"
+weight = 6

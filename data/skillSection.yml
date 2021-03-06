@@ -1,17 +1,19 @@
 ---
 enable: true
-topTitle: My Skills
+topTitle: Skills
 content: >
-  ## Why hire me for your next project?
+  ## ¿Por deberias creer en mí?
 
-  My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+  Principalmente por que me gustan los proyectos pero mis habilidades hablaran por mí.
 
 image: images/skill/skill_image.jpg
 
 skill:
-  - title: HTML
-    percent: 69
-  - title: CSS
+  - title: React Native
+    percent: 70
+  - title: Python
     percent: 60
   - title: Javascript
+    percent: 70
+  - title: Java
     percent: 85
