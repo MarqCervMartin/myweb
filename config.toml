@@ -59,10 +59,10 @@ weight = 5
 blogPageURL = "blog"
 contactLink = "contact"
 copyright = "All right reserved copyright © 2021"
-footerLogo = "images/contact/widget-logo.png"
+footerLogo = "images/contact/widget-logom.png"
 formspreeURL = "https://formspree.io/f/xaylgyeo"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
-logo = "images/site-navigation/logo.png"
+logo = "images/site-navigation/logom.png"
 
 [params.address]
 address = "70 San Pedro de la Laguna, Zumpango de Ocampo, Edomex."
