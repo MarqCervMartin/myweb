@@ -8,38 +8,32 @@ title: >
   de mis incursiones.
 service:
   - content: >
-      #### UI/UX Design 
+      #### TecTecShop 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/ui-ux.svg
+      Reparación, mantenimiento de dispositivos móviles y computadoras.
+    image: images/service/tectecshop.svg
   - content: >
-      #### Web Development 
+      #### VIGSOFT  
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/web.svg
+      Desarrollo de software móvil, web y excritorio especializado.
+    image: images/service/vigsoft.svg
   - content: >
-      #### Creative Design 
+      #### Code MX 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/creative.svg
+      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico.
+    image: images/service/codemx.svg
   - content: >
-      #### Branding
+      #### Martinez & Jines Contadores, S.C.
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/branding.svg
+      Despacho Contable con servicios de Asesoría y Contabilidad a Empresas, Negocios, Profesionistas y Jóvenes Emprendedores.
+    image: images/service/martines.svg
   - content: >
-      #### UI/UX Design
+      #### Biodiversidad de la Laguna de Zumpango
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/ui-ux.svg
+      El objetivo de la página es compartir información sobre la biodiversidad de la Laguna de Zumpango y alrededores, para favorecer a su conservación..
+    image: images/service/bio.svg
   - content: >
-      #### Web Development
+      #### Localitos
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/web.svg
+      Comida a domicilio, en donde los grandes players del delivery no cubren zonas rurales.
+    image: images/service/localitos.svg

@@ -67,7 +67,7 @@ logo = "images/site-navigation/logo.png"
 [params.address]
 address = "70 San Pedro de la Laguna, Zumpango de Ocampo, Edomex."
 email = "m@martinmc.me"
-openingHours = "Disponible 10am a 6pm (Domingos Offline)"
+openingHours = "Disponible de Lunes a Sabado"
 phone = "+(52) 55 7174 8569"
 
 [params.map]
