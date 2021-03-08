@@ -1,23 +1,18 @@
 ---
 title: "Hola Hugo"
-date: 2020-09-13T12:49:27+06:00
+date: 2021-03-08T12:49:27+06:00
 featureImage: images/allpost/allPost-6.jpg
 postImage: images/single-blog/feature-image.jpg
 ---
 
-This example Markdown file compliments of [markdown-it.github.io](https://markdown-it.github.io/)
+¿Cómo cree, está página y este blog?
 
 ---
 
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# HUGO
 
 
-## Horizontal Rules
+## Primer Paso
 
 ___
 
@@ -26,30 +21,31 @@ ___
 ***
 
 
-## Typographic replacements
+## Descargar Hugo
 
-Enable typographer option to see result.
+Lo primero es identificar tu sistema operativo, Windows, MAC o alguna distro de Linux, perfecto es hora de entrar a https://gohugo.io/
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+Instalaremos para macOS:
+```
+$ brew install hugo
+```
+Instalaremos para Windows:
+```
+$ choco install hugo -confirm
+```
+Instalaremos para Linux:
+```
+$ snap install hugo
+```
 
-test.. test... test..... test?..... test!....
 
-!!!!!! ???? ,,  -- ---
+## Vídeo 1 Descarga
 
-"Smartypants, double quotes" and 'single quotes'
+**¿TIenes alguna duda?**
 
+Checa este vídeo de instalación.
+[![Instalación](images/blog/hola-hugo/hugo-1.png)](https://youtu.be/aFBO45NVIhY)
 
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
 
 
 ## Blockquotes

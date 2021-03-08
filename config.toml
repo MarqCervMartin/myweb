@@ -36,10 +36,10 @@ weight = 7
 # Sitemap Menu
 [[menu.sitemap]]
 name = "Acerca de mí"
-url = "about"
+url = "#home"
 weight = 1
 [[menu.sitemap]]
-name = "Frequently Ask Question"
+name = "Ciencia"
 url = "#"
 weight = 2
 [[menu.sitemap]]
@@ -58,7 +58,7 @@ weight = 5
 [params]
 blogPageURL = "blog"
 contactLink = "contact"
-copyright = "All right reserved copyright © Portio 2020"
+copyright = "All right reserved copyright © 2021"
 footerLogo = "images/contact/widget-logo.png"
 formspreeURL = "https://formspree.io/f/xaylgyeo"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
@@ -66,7 +66,7 @@ logo = "images/site-navigation/logo.png"
 
 [params.address]
 address = "70 San Pedro de la Laguna, Zumpango de Ocampo, Edomex."
-email = "m@martinmc.me"
+email = "martinmarcer@gmail.com"
 openingHours = "Disponible de Lunes a Sabado"
 phone = "+(52) 55 7174 8569"
 
