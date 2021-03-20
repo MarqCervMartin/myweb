@@ -13,7 +13,7 @@ name = "Acerca"
 url = "#about"
 weight = 2
 [[menu.main]]
-name = "Skills"
+name = "Comunidades"
 url = "#service"
 weight = 3
 [[menu.main]]
@@ -61,7 +61,7 @@ contactLink = "contact"
 copyright = "All right reserved copyright © 2021"
 footerLogo = "images/contact/widget-logom.png"
 formspreeURL = "https://formspree.io/f/xaylgyeo"
-googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+googleAnalytics = "G-Q0GBJ2LZ1K"
 logo = "images/site-navigation/logom.png"
 
 [params.address]

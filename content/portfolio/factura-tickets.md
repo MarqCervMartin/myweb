@@ -16,4 +16,4 @@ solution: Incorporando tecnología, mediante una aplicación móvil el usuario s
 ---
 Desarrollado bajo la tecnología de React Native.
 
-Diseños Finales de la app.
+Diseños de prototip de la app.
