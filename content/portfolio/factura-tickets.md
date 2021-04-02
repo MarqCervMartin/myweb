@@ -1,19 +1,19 @@
 ---
-title: App Factura Tickets
-date: 2019-02-19T12:49:27.000+06:00
-thumbnail: images/portfolio/apptickets.png
+title: Crypto Tracker
+date: 2020-03-26T12:49:27.000+06:00
+thumbnail: https://media.giphy.com/media/Bq0KE8EO1Sb9VtBw9h/giphy.gif
 service: App, Finanzas
-client: Alan Martinez
-shortDescription: Servicio de facturación, incursionando en la facturación de combustible.
-  Monterrey es uno de los principales estados con mayor crecimiento económico,
-  el servicio está enfocado a repartidores de comida a domicilio en el cual es
-  impresindible facturar diversos servicios de su día a día.
-challenge: Ofrecer un servicio contable, fácil, seguro y rápido para poder estar al día de tus declaraciones fiscales.  
+client: Platzi
+shortDescription: Aplicación móvil para hacer tracking de las principales criptomonedas.
+  Diferentes conceptos afianzados y nuevos. Navegación con react native navigation v5, componentes y API con fetch.
+challenge: Realizar tracking de el mercado de criptomonedas, comprobar su volatilidad y los mercados en donde se ofertan.  
 
-solution: Incorporando tecnología, mediante una aplicación móvil el usuario sera
-  capaz de subir una imagen de su ticket y complementar de manera rápida la información, así un equipo profesional revisara cada factura.  
+solution: Aplicación móvil con tab y stack navigator, async storage para añadir favoritos y fecth para proveer la información.  
 
 ---
 Desarrollado bajo la tecnología de React Native.
 
-Diseños de prototip de la app.
+Realease V1. 👉
+
+
+https://github.com/MarqCervMartin/react-native-learn/tree/platzi21

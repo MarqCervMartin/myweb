@@ -4,16 +4,14 @@ topTitle: Skills
 content: >
   ## ¿Por deberias creer en mí?
 
-  Principalmente por que me gustan los proyectos pero mis habilidades hablaran por mí.
+  Principalmente por que me gustan los proyectos pero mis habilidades y valores solidos son parte de mí.
 
 image: images/skill/skill_img.jpg
 
 skill:
-  - title: React Native
-    percent: 70
-  - title: Python
+  - title: Aptitud y Respeto 
+    percent: 100
+  - title: Desarrollo Móvil
     percent: 60
-  - title: Javascript
+  - title: Ciencias Computacionales
     percent: 70
-  - title: Java
-    percent: 85

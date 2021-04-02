@@ -65,15 +65,15 @@ googleAnalytics = "G-Q0GBJ2LZ1K"
 logo = "images/site-navigation/logom.png"
 
 [params.address]
-address = "70 San Pedro de la Laguna, Zumpango de Ocampo, Edomex."
+address = "Zumpango de Ocampo, Edomex."
 email = "martinmarcer@gmail.com"
-openingHours = "Disponible de Lunes a Sabado"
+openingHours = "GMT-6: México"
 phone = "+(52) 55 7174 8569"
 
 [params.map]
 APIkey = "AIzaSyB6FFTBF4paFNRCmr_eOMhzRXAou9MDuM8"
-latitude = "19.776958"
-longitude = "-99.116624"
+latitude = "19.797605"
+longitude = "-99.100362"
 pinImage = "images/pin.png"
 
 # Social icons

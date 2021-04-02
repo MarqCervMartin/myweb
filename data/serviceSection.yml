@@ -5,35 +5,35 @@ title: >
   ## Servicios y Comunidades
 
   Siempre estoy en busca de ayudar con proyectos y contenido. Estás son algunas
-  de mis incursiones.
+  de mis incursiones. tectec,vigsoft,code,martinez, biodiversidad,localitos
 service:
-  - content: >
-      #### TecTecShop 
-
-      Reparación, mantenimiento de dispositivos móviles y computadoras.
-    image: images/service/tectecshop.svg
-  - content: >
-      #### VIGSOFT  
-
-      Desarrollo de software móvil, web y excritorio especializado.
-    image: images/service/vigsoft.svg
   - content: >
       #### Code MX 
 
-      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico.
+      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico. https://codemx.org/
     image: images/service/codemx.svg
   - content: >
-      #### Martinez & Jines Contadores, S.C.
+      #### Data Science Research
 
-      Despacho Contable con servicios de Asesoría y Contabilidad a Empresas, Negocios, Profesionistas y Jóvenes Emprendedores.
-    image: images/service/martines.svg
+      Descentralizar, democratizar y difundir los conocimientos en Ciencia de Datos e Inteligencia Artificial en Latinoamérica. MeetUps, Workshops y Semilleros. https://www.datascience.pe/
+    image: images/service/data-science-research.png
   - content: >
-      #### Biodiversidad de la Laguna de Zumpango
+      #### TecTecShop 
 
-      El objetivo de la página es compartir información sobre la biodiversidad de la Laguna de Zumpango y alrededores, para favorecer a su conservación..
-    image: images/service/bio.svg
+      Especialistas de hardware y software enfocados en problemas comunes de impacto social, atendiendo necesidades de computación básicas hasta diseño de software para la solución de procesos. https://www.tectecshop.com/
+    image: images/service/tectecshop.svg
+  - content: >
+      #### RIIAA
+
+      RIIAA reúne el ecosistema de inteligencia artificial (IA) mexicano y latinoamericano. Csomunidades académicas e industriales, para catalizar el desarrollo, la adaptación y el uso de la IA en el país. https://riiaa.org/
+    image: images/service/riiaa.png
+  - content: >
+      #### VIGSOFT  
+
+      Proveemos plataformas web, apps y soluciones que trascienden, internacionalmente. Experiencia con aplicaciones extranjeras y desarrollos tecnologicos sin barreras con la nueva era 4.0 desde cualquier parte del mundo. https://vigsoft.tech/
+    image: images/service/vigsoft.svg
   - content: >
       #### Localitos
 
-      Comida a domicilio, en donde los grandes players del delivery no cubren zonas rurales.
+      Comida a domicilio, en donde los grandes players del delivery no cubren zonas rurales. https://tuslocalitos.com/
     image: images/service/localitos.svg
