@@ -13,7 +13,7 @@ solution: Aplicación móvil con tab y stack navigator, async storage para añad
 ---
 Desarrollado bajo la tecnología de React Native.
 
-Realease V1. 👉
+Realease V1. 👉 https://github.com/MarqCervMartin/react-native-learn/releases/tag/v1.0.0
 
 
 https://github.com/MarqCervMartin/react-native-learn/tree/platzi21

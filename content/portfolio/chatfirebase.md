@@ -12,7 +12,6 @@ solution: Poder compartir mi experiencia y compartir en un meetup lo aprendido,
   en donde platicamos desde como instalar hasta probar el código! y los mayores retos al construir un chat.
 draft: false
 ---
-![Texto alternativo](../../images/portfolio/chatfirebase2.png)
 
 Features.
 
@@ -27,4 +26,5 @@ Features.
 Todas las instrucciones e información aquí! .  
 https://www.meetup.com/es/code-mx/events/276577264/  
 Descarga la App Demo!  
+https://play.google.com/store/apps/details?id=com.chatfirebase
 
