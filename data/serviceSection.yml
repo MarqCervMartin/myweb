@@ -10,30 +10,40 @@ service:
   - content: >
       #### Code MX 
 
-      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico. https://codemx.org/
+      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico. https://codemx.org/  
+      
+      🕵️‍♂️Host y Creador de contenido👨‍💻
     image: images/service/codemx.svg
   - content: >
       #### Data Science Research
 
-      Descentralizar, democratizar y difundir los conocimientos en Ciencia de Datos e Inteligencia Artificial en Latinoamérica. MeetUps, Workshops y Semilleros. https://www.datascience.pe/
+      Descentralizar, democratizar y difundir los conocimientos en Ciencia de Datos e Inteligencia Artificial en Latinoamérica. MeetUps, Workshops y Semilleros. https://www.datascience.pe/  
+      🔭Team Networking
     image: images/service/data-science-research.png
   - content: >
       #### TecTecShop 
 
-      Especialistas de hardware y software enfocados en problemas comunes de impacto social, atendiendo necesidades de computación básicas hasta diseño de software para la solución de procesos. https://www.tectecshop.com/
+      Especialistas de hardware y software enfocados en problemas comunes de impacto social, atendiendo necesidades de computación básicas hasta diseño de software para la solución de procesos. https://www.tectecshop.com/  
+      👨‍🍳Software Developer
     image: images/service/tectecshop.svg
   - content: >
       #### RIIAA
 
-      RIIAA reúne el ecosistema de inteligencia artificial (IA) mexicano y latinoamericano. Csomunidades académicas e industriales, para catalizar el desarrollo, la adaptación y el uso de la IA en el país. https://riiaa.org/
+      RIIAA reúne el ecosistema de inteligencia artificial (IA) mexicano y latinoamericano. Csomunidades académicas e industriales, para catalizar el desarrollo, la adaptación y el uso de la IA en el país. https://riiaa.org/  
+      
+      🧠Team Comunidades
     image: images/service/riiaa.png
   - content: >
       #### VIGSOFT  
 
-      Proveemos plataformas web, apps y soluciones que trascienden, internacionalmente. Experiencia con aplicaciones extranjeras y desarrollos tecnologicos sin barreras con la nueva era 4.0 desde cualquier parte del mundo. https://vigsoft.tech/
+      Proveemos plataformas web, apps y soluciones que trascienden, internacionalmente. Experiencia con aplicaciones extranjeras y desarrollos tecnologicos sin barreras con la nueva era 4.0 desde cualquier parte del mundo. https://vigsoft.tech/  
+
+      🤳Mobile Dev
     image: images/service/vigsoft.svg
   - content: >
       #### Localitos
 
-      Comida a domicilio, en donde los grandes players del delivery no cubren zonas rurales. https://tuslocalitos.com/
+      Comida a domicilio, en donde los grandes players del delivery no cubren zonas rurales. https://tuslocalitos.com/  
+      
+      🤝Ayudando PYMES
     image: images/service/localitos.svg

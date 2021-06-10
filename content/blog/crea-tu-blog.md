@@ -1,5 +1,5 @@
 ---
-title: "Hola Hugo"
+title: "Crea tu blog fácil y rápido"
 date: 2021-03-08T12:49:27+06:00
 featureImage: images/allpost/hugo.png
 postImage: images/allpost/hugo.png
@@ -9,7 +9,7 @@ postImage: images/allpost/hugo.png
 
 ---
 
-# HUGO
+# Te presento a HUGO
 Hugo es un generador de archivos Web estáticos escrito en Go y aunque hay otras herramientas con esta misma utilidad, con Hugo encontrarás muchos temas desarrollados por la comunidad, es fácil de configurar y los artículos que escribas son fácilmente exportables de un tema a otro.
 
 ## Primer Paso

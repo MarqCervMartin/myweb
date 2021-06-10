@@ -86,7 +86,7 @@ icon = "fa-linkedin-square"
 url = "https://www.linkedin.com/in/martin-marquez-cervantes/"
 weight = 2
 [[params.social]]
-icon = "fa-pinterest-square"
+icon = "fa-instagram"
 url = "https://www.instagram.com/martyeei/"
 weight = 3
 [[params.social]]
