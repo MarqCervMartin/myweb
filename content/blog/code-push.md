@@ -30,11 +30,12 @@ Para el caso de code-push cli:
 ```bash
 code-push register
 ```
+
+
+{{< blogsection image="https://docs.microsoft.com/en-us/appcenter/cli/images/terminallogin.png">}}
 Nos abrira el navegador y nos podremos loggear con los diferentes provedores de autenticación, una vez hecho esto nos proporcionara un token. Lo copiamos en nuestra terminal y listo.
 
-
-![Token Loggin](https://docs.microsoft.com/en-us/appcenter/cli/images/terminallogin.png)
-
+{{< /blogsection >}}
 Podemos consultar nuestra información con el comando 
 ```bash
 appcenter profile list
@@ -52,21 +53,25 @@ En mi caso particular cree dos despliegues para Android y iOS
 appcenter codepush deployment add -a FinveroApp/Finvero-Android Staging
 ```
 Estás nos daran nuestras keys de despliegue.
-![Keys Android depliegue](https://i.ibb.co/3pX3LVJ/Deployment-Android-key.png)
+{{< blogsection image="https://i.ibb.co/3pX3LVJ/Deployment-Android-key.png">}}
+{{< /blogsection >}}
 
 #### iOS
+
 ```bash
 appcenter codepush deployment add -a FinveroApp/Finvero-iOS Staging
 ```
-![Keys iOS depliegue](https://i.ibb.co/dfbKwNt/Deploymenti-OS-key.png)
+{{< blogsection image="https://i.ibb.co/dfbKwNt/Deploymenti-OS-key.png">}}
+{{< /blogsection >}}
 
+#### AppCenter
 En caso de tener agregado las palicaciones podemos ocupar code-push cli para listar nuestra tabla con esas keys, para el mismo ejemplo: 
 
 ```bash
 code-push deployment ls FinveroApp/Finvero-Android -k
 ```
-![Deplorment Data](https://i.ibb.co/KNdVJpj/table-keys.png)
-
+{{< blogsection image="https://i.ibb.co/KNdVJpj/table-keys.png" >}}  
+{{< /blogsection >}}
 ### Conectando Code-Push a un proyecto react native
 1. Instalamos el paquete ya sea con yarn o npm
 
@@ -104,7 +109,7 @@ export default App;
 
 ```
 3. Agregar componente de descarga.
-Para mostrar al usuario la descarga y porcentaje se propone el siguiente componente:  , https://gist.github.com/MarqCervMartin/eaa0e08ba2e3946cd64a23f6e1153c42 esto es gracias a los métodos de code-push en su [documentación](https://github.com/microsoft/react-native-code-push/blob/master/docs/api-js.md#codepushsync)
+Para mostrar al usuario la descarga y porcentaje se propone el siguiente componente: [código ejemplo](https://gist.github.com/MarqCervMartin/eaa0e08ba2e3946cd64a23f6e1153c42) esto es gracias a los métodos de code-push en su [documentación](https://github.com/microsoft/react-native-code-push/blob/master/docs/api-js.md#codepushsync)
 
 Por ahora el componente que se muestra: 
 
@@ -112,8 +117,8 @@ Por ahora el componente que se muestra:
     <CodePushLoading/> {/* Componente personalizado para mostrar al usuario*/}
 ```
 Incluye etiquetas para mostrar lo Actualización y porcentaje: 
-![Finvero Update](https://i.ibb.co/bXLYSvD/Finvero-Code-Push-Update.png)
-![Finvero Percen](https://i.ibb.co/yQBDSMZ/Finvero-Code-Push-Percent.png)
+{{< blogsection image="https://i.ibb.co/GnmmNmV/Update-Percent.png" >}}  
+{{< /blogsection >}}
 
 4. Agregar Keys
 Una vez instalado y agregado el componente es hora de agregar las claves, para el caso de Android en la dirección android/app/src/main/res/values/strings.xml
@@ -148,7 +153,8 @@ appcenter codepush release-react -a {NOMBRE_APP_ANDROID} -d Production
 appcenter codepush release-react -a {NOMBRE_APP_IOS} -d Production
 ```
 #### Realease exitoso
-![Release Succes](https://i.ibb.co/zx9VKfG/code-push1.png)
+{{< blogsection image="https://i.ibb.co/h97Z4nK/code-push1-2.png" >}}  
+{{< /blogsection >}}
 
 <!---
 
