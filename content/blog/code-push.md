@@ -1,6 +1,6 @@
 ---
 title: "Code Push en React Native"
-date: 2020-07-13T13:06:26+06:00
+date: 2021-06-11T13:06:26+06:00
 featureImage: images/allpost/codepush.png
 postImage: images/allpost/codepush.png
 draft: false
