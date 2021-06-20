@@ -41,7 +41,7 @@ Podemos consultar nuestra información con el comando
 appcenter profile list
 ```
 ### Configurando Entorno
-Como lo indica en su documentación originalmente las aplicaciones en CodePush tenían automáticamente dos despliegues (Staging y Production). En App Center, debe crearlas o mediante los siguientes comandos:
+Como lo indica en su documentación originalmente las aplicaciones en CodePush tenían automáticamente dos despliegues o Deployments (Staging y Production). En App Center, debe crearlas o mediante los siguientes comandos:
 ```bash
 appcenter codepush deployment add -a <ownerName>/<appName> Staging
 appcenter codepush deployment add -a <ownerName>/<appName> Production
@@ -52,7 +52,7 @@ En mi caso particular cree dos despliegues para Android y iOS
 ```bash
 appcenter codepush deployment add -a FinveroApp/Finvero-Android Staging
 ```
-Estás nos daran nuestras keys de despliegue.
+Estás nos daran nuestras keys de despliegue o deployments keys.
 {{< blogsection image="https://i.ibb.co/3pX3LVJ/Deployment-Android-key.png">}}
 {{< /blogsection >}}
 
@@ -64,7 +64,7 @@ appcenter codepush deployment add -a FinveroApp/Finvero-iOS Staging
 {{< blogsection image="https://i.ibb.co/dfbKwNt/Deploymenti-OS-key.png">}}
 {{< /blogsection >}}
 
-#### AppCenter
+#### AppCenter Deployments Keys
 En caso de tener agregado las palicaciones podemos ocupar code-push cli para listar nuestra tabla con esas keys, para el mismo ejemplo: 
 
 ```bash
@@ -72,6 +72,59 @@ code-push deployment ls FinveroApp/Finvero-Android -k
 ```
 {{< blogsection image="https://i.ibb.co/KNdVJpj/table-keys.png" >}}  
 {{< /blogsection >}}
+
+Podemos consultar nuestras aplicaciones con el comando
+```
+appcenter apps list
+```
+#### Añadiendo Deployments Keys Staging o Production Android
+Para poder agregar las keys que recienctemente obtuvimos, deberemos tener abrir para la parte de Android el archivo string.xml úbicado en android/app/src/main/res/values/strings.xml la siguiente línea: 
+
+```xml
+     <string moduleConfig="true" name="CodePushDeploymentKey">DeploymentKey</string>
+```
+Para la parte de iOS consultar la [documentación](https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native#31-integrate-the-sdk-automatically-for-react-native-060)
+
+#### Configuración extra Android
+Antes de poder conectar code-push a nuestro código en React Native deberemos revisar el caso específico de dispositivos Android. Podemos revisar la [documentación](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md) pero básicamente debemos: 
+
+1. En la ruta android/build.gradle asegurarnos de tener versión gradle >= 3.6.3
+```java
+  classpath('com.android.tools.build:gradle:3.6.3')
+```
+2. Ejecutar el comando link en la raiz.
+```bash
+react-native link react-native-code-push
+```
+3. En android/settings.gradle asegurarnos que se agrego con react-native link
+```java
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+```
+4. En android/app/build.gradle agregar la línea codepush.gradle debajo de react.gradle
+```java
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+```
+5. Por último en el archivo MainApplication.java importar code-push y agregar el método.
+```java
+import com.microsoft.codepush.react.CodePush;
+
+public class MainApplication extends Application implements ReactApplication {
+
+    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+        ...
+
+        // 2. Override the getJSBundleFile method in order to let
+        // the CodePush runtime determine where to get the JS
+        // bundle location from on each app start
+        @Override
+        protected String getJSBundleFile() {
+            return CodePush.getJSBundleFile();
+        }
+    };
+}
+```
 ### Conectando Code-Push a un proyecto react native
 1. Instalamos el paquete ya sea con yarn o npm
 
