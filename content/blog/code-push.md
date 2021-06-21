@@ -41,12 +41,16 @@ Podemos consultar nuestra información con el comando
 appcenter profile list
 ```
 ### Configurando Entorno
+El primer paso es crear desde tu perfil de AppCenter o en una organización dos aplicaciones, una para Android y una segunda para iOS.
+
+El nombre sugerido es NombreApp-Android y NombreApp-iOS
+
 Como lo indica en su documentación originalmente las aplicaciones en CodePush tenían automáticamente dos despliegues o Deployments (Staging y Production). En App Center, debe crearlas o mediante los siguientes comandos:
 ```bash
 appcenter codepush deployment add -a <ownerName>/<appName> Staging
 appcenter codepush deployment add -a <ownerName>/<appName> Production
 ```
-##### Ejemplos: 
+##### Ejemplos entorno Staging: 
 En mi caso particular cree dos despliegues para Android y iOS
 #### Android
 ```bash
@@ -83,6 +87,13 @@ Para poder agregar las keys que recienctemente obtuvimos, deberemos tener abrir 
 ```xml
      <string moduleConfig="true" name="CodePushDeploymentKey">DeploymentKey</string>
 ```
+Igualmente agregamos un archivo llamado appcenter-config.json en la ruta android/app/src/main/assets con la clave que está disponible en appcenter.ms
+```json
+    //appcenter-config.json
+    {
+        "app_secret": "8c62d662-fa3e-46c2-bb5c-e1c86396cffc"
+    }
+```
 Para la parte de iOS consultar la [documentación](https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native#31-integrate-the-sdk-automatically-for-react-native-060)
 
 #### Configuración extra Android
@@ -98,8 +109,8 @@ react-native link react-native-code-push
 ```
 3. En android/settings.gradle asegurarnos que se agrego con react-native link
 ```java
-apply from: "../../node_modules/react-native/react.gradle"
-apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+include ':app', ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
 ```
 4. En android/app/build.gradle agregar la línea codepush.gradle debajo de react.gradle
 ```java
@@ -173,24 +184,16 @@ Incluye etiquetas para mostrar lo Actualización y porcentaje:
 {{< blogsection image="https://i.ibb.co/GnmmNmV/Update-Percent.png" >}}  
 {{< /blogsection >}}
 
-4. Agregar Keys
-Una vez instalado y agregado el componente es hora de agregar las claves, para el caso de Android en la dirección android/app/src/main/res/values/strings.xml
-deberemos colocar la siguiente línea en donde la key sera el de nuestro ambiente de Stagging o Production.
-```xml
-    <string moduleConfig="true" name="CodePushDeploymentKey">rxbekzSrhf6TL5EubCdteHZwfQDUtCWHdZq</string>
-```
-Igualmente agregamos un archivo llamado appcenter-config.json en la ruta android/app/src/main/assets con la clave que está disponible en appcenter.ms
-```json
-    //appcenter-config.json
-    {
-        "app_secret": "8c62d662-fa3e-46c2-bb5c-e1c86396cffc"
-    }
-```
+
 
 ### Creando Release
 #### Staging
 Para prueba podremos realizar un release en Staging, para saber en que versión se encuentra el caso de Android podemos saberlo en la ruta: android/app/build.gradle y nos mostrara el versionName, en mi caso me encuentro en la versión 1.2.0, ejecutamos el siguiente comando como ejemplo mi Organización: FinveroApp y como aplicación Finvero-Android, como versión: 1.2.0 y en el ambiente Staging
 
+```bash
+appcenter codepush release-react -a <ownerName>/<appName> -d <deploymentName> -t <targetBinaryVersion>
+```
+Ejemplo:
 ```bash
 appcenter codepush release-react -a FinveroApp/Finvero-Android -t "1.2.0" -d Staging
 ```
