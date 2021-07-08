@@ -91,7 +91,7 @@ Igualmente agregamos un archivo llamado appcenter-config.json en la ruta android
 ```json
     //appcenter-config.json
     {
-        "app_secret": "8c62d662-fa3e-46c2-bb5c-e1c86396cffc"
+        "app_secret": "8c62d992-fa3e-74c2-cc5c-pkl86396cggh"
     }
 ```
 Para la parte de iOS consultar la [documentación](https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native#31-integrate-the-sdk-automatically-for-react-native-060)

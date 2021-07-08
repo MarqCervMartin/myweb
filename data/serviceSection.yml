@@ -5,15 +5,21 @@ title: >
   ## Servicios y Comunidades
 
   Siempre estoy en busca de ayudar con proyectos y contenido. Estás son algunas
-  de mis incursiones. tectec,vigsoft,code,martinez, biodiversidad,localitos
+  de mis incursiones.
 service:
   - content: >
       #### Code MX 
 
-      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico. https://codemx.org/  
+      Comunidad tecnológica que busca aportar al crecimiento económico de México, contactando especialistas en el sector tecnológico. https://web-code-mx.vercel.app/ 
       
       🕵️‍♂️Host y Creador de contenido👨‍💻
     image: images/service/codemx.svg
+  - content: >
+      #### Alchimia MX
+
+      Invirtiendo más tiempo en mejorar la experiencia del cliente con soluciones innovadoras, Alchimia es una startup donde verdaderamente hay una mejora continua. https://www.alchimia.mx/  
+      ⚛️React Typescript Developer
+    image: images/service/alchimia.svg
   - content: >
       #### Data Science Research
 
