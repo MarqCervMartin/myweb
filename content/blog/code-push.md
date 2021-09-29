@@ -41,11 +41,13 @@ Podemos consultar nuestra información con el comando
 appcenter profile list
 ```
 ### Configurando Entorno
+{{< blogsection image="https://media.giphy.com/media/dngYrh4RACOjY9rcCh/giphy.gif?cid=790b761170aede88380510dba53f7de23cd0d3b82519717f&rid=giphy.gif&ct=g">}}
 El primer paso es crear desde tu perfil de AppCenter o en una organización dos aplicaciones, una para Android y una segunda para iOS.
-
+{{< /blogsection >}}
+### Entorno Staging y Production
 El nombre sugerido es NombreApp-Android y NombreApp-iOS
 
-Como lo indica en su documentación originalmente las aplicaciones en CodePush tenían automáticamente dos despliegues o Deployments (Staging y Production). En App Center, debe crearlas o mediante los siguientes comandos:
+Como lo indica en su documentación originalmente las aplicaciones en CodePush tenían automáticamente dos despliegues o Deployments (Staging y Production) que nos ayudaran para tener un entorno de pruebas y un entorno de producción. En App Center, debe crearlas o mediante los siguientes comandos:
 ```bash
 appcenter codepush deployment add -a <ownerName>/<appName> Staging
 appcenter codepush deployment add -a <ownerName>/<appName> Production

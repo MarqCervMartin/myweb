@@ -15,6 +15,19 @@ service:
       🕵️‍♂️Host y Creador de contenido👨‍💻
     image: images/service/codemx.svg
   - content: >
+      #### Walmart International Global Tech
+
+      Una de las mejores compañias para trabajar, un gran player del retail!. Por que no son los individuos los que ganan si no los equipos [Walmart Global Tech](https://www.linkedin.com/company/walmartglobaltech/)
+      
+      ⚛️Full Stack React Native Developer - NLP Machine Learning.
+    image: images/service/walmart.svg
+  - content: >
+      #### Hoppi App
+
+      Encuentra personas cerca de tí y arma un Hoppi!. https://www.hoppi.app/  
+      ⚛️React Native Developer
+    image: images/service/hoppi.svg
+  - content: >
       #### Alchimia MX
 
       Invirtiendo más tiempo en mejorar la experiencia del cliente con soluciones innovadoras, Alchimia es una startup donde verdaderamente hay una mejora continua. https://www.alchimia.mx/  
@@ -35,7 +48,7 @@ service:
   - content: >
       #### RIIAA
 
-      RIIAA reúne el ecosistema de inteligencia artificial (IA) mexicano y latinoamericano. Csomunidades académicas e industriales, para catalizar el desarrollo, la adaptación y el uso de la IA en el país. https://riiaa.org/  
+      RIIAA reúne el ecosistema de inteligencia artificial (IA) mexicano y latinoamericano. Comunidades académicas e industriales, para catalizar el desarrollo, la adaptación y el uso de la IA en el país. https://riiaa.org/  
       
       🧠Team Comunidades
     image: images/service/riiaa.png
