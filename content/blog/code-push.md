@@ -17,7 +17,7 @@ La versión más reciente es appcenter cli y podras descargarla con el siguiente
 ```bash
 npm install -g appcenter-cli
 ```
-Igualmente necesitaremos de code-push cli para listar las keys de deployment.
+Anteriormente estaba code-push-cli pero ahora se encuentra en desuso
 ```bash
 npm install -g code-push-cli
 ```
@@ -44,6 +44,16 @@ appcenter profile list
 {{< blogsection image="https://media.giphy.com/media/dngYrh4RACOjY9rcCh/giphy.gif?cid=790b761170aede88380510dba53f7de23cd0d3b82519717f&rid=giphy.gif&ct=g">}}
 El primer paso es crear desde tu perfil de AppCenter o en una organización dos aplicaciones, una para Android y una segunda para iOS.
 {{< /blogsection >}}
+Para poder listar las aplicaciones ya creadas desde appcenter, las podremos listar desde línea de comandos: 
+
+```
+appcenter apps list
+```
+En mi caso se listan: 
+```
+ChaTerri/ChaTerri-Android
+ChaTerri/ChaTerri-iOS
+```
 ### Entorno Staging y Production
 El nombre sugerido es NombreApp-Android y NombreApp-iOS
 
@@ -56,33 +66,36 @@ appcenter codepush deployment add -a <ownerName>/<appName> Production
 En mi caso particular cree dos despliegues para Android y iOS
 #### Android
 ```bash
-appcenter codepush deployment add -a FinveroApp/Finvero-Android Staging
+appcenter codepush deployment add -a ChaTerri/ChaTerri-Android Staging
 ```
 Estás nos daran nuestras keys de despliegue o deployments keys.
-{{< blogsection image="https://i.ibb.co/3pX3LVJ/Deployment-Android-key.png">}}
+{{< blogsection image="https://i.ibb.co/z41b1kc/codepush-androiddeployment.png">}}
 {{< /blogsection >}}
-
+###   -----------------
 #### iOS
 
 ```bash
-appcenter codepush deployment add -a FinveroApp/Finvero-iOS Staging
+appcenter codepush deployment add -a ChaTerri/ChaTerri-iOS Staging
 ```
-{{< blogsection image="https://i.ibb.co/dfbKwNt/Deploymenti-OS-key.png">}}
+{{< blogsection image="https://i.ibb.co/PrZWPpC/codepush-iosdeployment.png">}}
 {{< /blogsection >}}
+###   -----------------
 
 #### AppCenter Deployments Keys
-En caso de tener agregado las palicaciones podemos ocupar code-push cli para listar nuestra tabla con esas keys, para el mismo ejemplo: 
+En caso de tener agregado las palicaciones podemos ocupar code-push cli para listar nuestra tabla con esas keys, para el mismo ejemplo:
 
 ```bash
-code-push deployment ls FinveroApp/Finvero-Android -k
+appcenter codepush deployment list -a ChaTerri/ChaTerri-Android -k
 ```
-{{< blogsection image="https://i.ibb.co/KNdVJpj/table-keys.png" >}}  
+OwnerName/appName = ChaTerri/ChaTerri-Android
+```
+appcenter codepush deployment list -a <ownerName>/<appName> -k
+```
+{{< blogsection image="https://i.ibb.co/5hH4zgT/codepush-deploymentkeys.png" >}}  
 {{< /blogsection >}}
 
-Podemos consultar nuestras aplicaciones con el comando
-```
-appcenter apps list
-```
+###   -----------------
+
 #### Añadiendo Deployments Keys Staging o Production Android
 Para poder agregar las keys que recienctemente obtuvimos, deberemos tener abrir para la parte de Android el archivo string.xml úbicado en android/app/src/main/res/values/strings.xml la siguiente línea: 
 
@@ -182,22 +195,24 @@ Por ahora el componente que se muestra:
 ```javascript
     <CodePushLoading/> {/* Componente personalizado para mostrar al usuario*/}
 ```
+<!---
 Incluye etiquetas para mostrar lo Actualización y porcentaje: 
 {{< blogsection image="https://i.ibb.co/GnmmNmV/Update-Percent.png" >}}  
 {{< /blogsection >}}
+-->
 
 
 
 ### Creando Release
 #### Staging
-Para prueba podremos realizar un release en Staging, para saber en que versión se encuentra el caso de Android podemos saberlo en la ruta: android/app/build.gradle y nos mostrara el versionName, en mi caso me encuentro en la versión 1.2.0, ejecutamos el siguiente comando como ejemplo mi Organización: FinveroApp y como aplicación Finvero-Android, como versión: 1.2.0 y en el ambiente Staging
+Para prueba podremos realizar un release en Staging, para saber en que versión se encuentra el caso de Android podemos saberlo en la ruta: android/app/build.gradle y nos mostrara el versionName, en mi caso me encuentro en la versión 1.2.0, ejecutamos el siguiente comando como ejemplo mi Organización: ChaTerri y como aplicación ChaTerri-Android, como versión: 1.2.0 y en el ambiente Staging
 
 ```bash
 appcenter codepush release-react -a <ownerName>/<appName> -d <deploymentName> -t <targetBinaryVersion>
 ```
 Ejemplo:
 ```bash
-appcenter codepush release-react -a FinveroApp/Finvero-Android -t "1.2.0" -d Staging
+appcenter codepush release-react -a ChaTerri/ChaTerri-Android -t "1.2.0" -d Staging
 ```
 #### Production
 Para producción: 
