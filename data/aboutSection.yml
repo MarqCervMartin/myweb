@@ -2,18 +2,17 @@
 enable: true
 topTitle: Acerca
 title: >
-  ## Acerca de mi
+  ## ¿Qué hay por aquí?
 
-  Construimos un futuro con la ayuda de la tecnología, pero juntos un mundo mejor.
+  Algunos blogs de tecnología, mi historia y opinión.
 
 content: >
-  ### Software Engineer and Mobile Development.
+  ### Martin.
 
-  Mediante aplicaciones móviles he plasmado la resolución de problemas de impacto
-  social, de grandes eventos en línea y para la mejorar la calidad de vida de las
-  personas. Cuando juntas software y hardware construyes soluciones verdaderamente Increíbles.
-button1Name: Contactame
-button2Name: Download CV
+  Actualmente trabajando con personas asombrosas y de diferentes culturas en Walmart Global Tech, estudie turismo 🧐, me gusta la ciencia :D, el ajedrez y las motocicletas 🏍
+
+button1Name: Say me Hello :P
+button2Name: Linkedin
 button1Target: contact
-button2Target: https://drive.google.com/uc?id=1ozAf11AMJPlQf0RSZMvq2TNW3RTj2rqI&export=download&authuser=0
+button2Target: https://www.linkedin.com/in/martin-marquez-cervantes/
 image: https://i.ibb.co/3SqStX3/one.webp

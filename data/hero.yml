@@ -1,11 +1,10 @@
 ---
 enable: true
-topTitle: Hola, mi nombre es Martín
+topTitle: Hola 👋, yo soy Martín.
 content: >
-  # Y soy Developer de apps móviles.
+  # Apasionado por la ciencia, desarrollando tecnología 🧐.
 
-  Me apasiona colaborar y desarrollar proyectos con tecnologías recientes.
-buttonName: Contactame
+buttonName: Hola
 buttonURL: contact
 image: images/hero/marti.webp
 videoThumb: images/hero/Bienal2020.png
